@@ -2,6 +2,10 @@
   margin 0px auto;
   padding: opx auto;
 }
+.about-us{
+  margin:0px auto;
+  padding:50px 0px 50px 0px;
+}
 .row-content{
   margin:0px auto;
   padding:50px 0px 50px 0px;
@@ -24,7 +28,4 @@
   font-size:80%;
   margin:0px;
   color:aliceblue;
-}
-.link-color{
-  color:black !important;
 }
