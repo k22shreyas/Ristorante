@@ -11,9 +11,27 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 <link rel="stylesheet" href="styles.css">
 <body>
-
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span calss="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-band" href="#">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-items"><a class="nav-link active" href="index.html"><span class="fa fa-home"></span> Home</a></li>
+                    <li class="nav-items"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info"></span> About</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#"><span class="fa fa-list"></span> Menu</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#"><span class="fa fa-address-card"></span> Contact</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -68,7 +86,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a class="link-color" href="#">Home</a></li>
-                        <li><a class="link-color" href="#">About</a></li>
+                        <li><a class="link-color" href="./aboutus.html">About</a></li>
                         <li><a class="link-color" href="#">Menu</a></li>
                         <li><a class="link-color" href="#">Contact</a></li>
                     </ul>
