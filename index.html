@@ -27,10 +27,53 @@
                     <li class="nav-items"><a class="nav-link" href="#"><span class="fa fa-list"></span> Menu</a></li>
                     <li class="nav-items"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginmodal">
+                        <span class="fa fa-sign-in"></span>Login
+                    </a>
+                </span>
             </div>
            
         </div>
     </nav>
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div clas="modal-header">
+                    <h4 class="modal-title">
+                        Login
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputemail">Email address</label>
+                                <input class="form-control form-control-sm mr-1" type="email" name="email" placeholder="Enter email" id="inputemail">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="inputpassword" class="sr-only">Password</label>
+                                <input type="password" id="inputpassword" class="form-control form-control-sm mr-1" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                <input type="checkbox" id="rememberme" class="form-check-input">
+                                <label class="form-check-label" for="rememberme">Remember Me</label>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -42,7 +85,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col align-self-center">
-                    <button class="btn btn-warning col-sm-6" name="Reserve Tables"><a href="#reserve-tables" style="text-decoration:none;color:black;">Reserve Table</a></button>
+                    <button class="btn btn-warning col-md-12" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+456 234456567</strong>" data-placement="bottom" name="Reserve Tables"><a href="#reserve-tables" style="text-decoration:none;color:black;">Reserve Table</a></button>
                 </div>
             </div>
         </div>
@@ -119,17 +162,17 @@
                     <div class="col-md-7 col-sm-6 offset-md-0">
                         <h5>
                             <input type="radio" id="1" name="Guests" value="1">
-                            <label for="html">1</label>
+                            <label for="1">1</label>
                             <input type="radio" id="2" name="Guests" value="2">
-                            <label for="html">2</label>
+                            <label for="2">2</label>
                             <input type="radio" id="3" name="Guests" value="3">
-                            <label for="html">3</label>
+                            <label for="3">3</label>
                             <input type="radio" id="4" name="Guests" value="4">
-                            <label for="html">4</label>
+                            <label for="4">4</label>
                             <input type="radio" id="5" name="Guests" value="5">
-                            <label for="html">5</label>
+                            <label for="5">5</label>
                             <input type="radio" id="6" name="Guests" value="6">
-                            <label for="html">6</label>    
+                            <label for="6">6</label>    
                         </h5>
                     </div>
                 </div>
@@ -198,6 +241,12 @@
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+
+    });
+    </script>
 </body>
 
 </html>
