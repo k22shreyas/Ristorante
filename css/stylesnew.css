@@ -9,14 +9,14 @@
   min-height: 400px; }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #d64161;
   margin: 0px auto;
   padding: 20px 0px; }
 
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
+  background: #d64161;
   color: floralwhite; }
 
 address {
@@ -29,16 +29,17 @@ body {
   z-index: 0; }
 
 .navbar-dark {
-  background-color: #512DA8; }
+  background-color: #d64161; 
+}
 
 .tab-content {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
   padding: 10px; }
 
 .carousel {
-  background: #512DA8; }
+  background: #d64161; }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {
@@ -54,11 +55,11 @@ body {
   z-index: 1; }
 
 .modal .modal-body {
-  background-color: #D1C4E9; }
+  background-color: #ffffff; }
 
 .modal .modal-header {
   color: floralwhite;
-  background: #512DA8; }
+  background: #d64161; }
   .modal .modal-header .close {
     color: floralwhite; }
 
